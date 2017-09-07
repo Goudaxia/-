@@ -1,0 +1,180 @@
+/*公共的CSS文件*/
+
+@charset "utf-8";
+
+/*初始化CSS*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+img{vertical-align: top;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+capation,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before, q:after{content:'';}
+abbr,acronym{border:0;}
+
+.bc{margin-left:auto;margin-right:auto;}   /*块状元素集中对齐 block center*/
+.fl{float:left;display:inline;}  /* 可修复IE6中双倍边距bug */
+.fr{float:right;display:inline;}
+
+/*用伪元素清除浮动造成的塌陷*/
+.clearfix:after{
+	content:'';
+	clear:both;
+	display:block;  /*只有块状元素才可以清除浮动造成的塌陷*/
+	height: 0;
+	visibility:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+
+/*声明图表字体*/
+@font-face {
+  font-family: "iconfont";
+  src: url('font/iconfont.eot'); /* IE9*/
+  src: url('font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*使用图标字体*/
+.icon{
+	font-family: "iconfont";
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body{
+	color:#3c3c3c;
+	-webkit-font-smoothing: antialiased;   /*当网页在webkit内核呈现的时候，让字体更加圆润*/
+}
+a{
+	color:#6c6c6c;
+	text-decoration: none;
+}
+a:hover{
+	color:#ff4400;
+}
+.cheng{
+	color:#f22e00 !important;
+}
+.tbcheng{
+	color:#ff4400 !important;
+}
+.hui{
+	color:#9c9c9c !important;
+}
+.anhong{
+	color:#c60000 !important;
+}
+
+.banxin{
+	width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*用户导航start*/
+body{
+	height:1000px;
+}
+.user-nav{
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid #EEEEEE;
+	border-bottom:1px solid red;
+	background:#F5F5F5;
+}
+.user-nav-left{
+	height:35px;
+	float:left;
+}
+.user-nav-left li{
+	float:left;
+	margin-right:12px;
+}
+.user-nav-left a{
+	margin-left:6px;
+	margin-right:1px;
+}
+.user-nav-right{
+	float:right;
+	height:35px;
+}
+.user-nav-right li{
+	float:left;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	padding-left:5px;
+	padding-right:5px;
+	position:relative;
+}
+.user-nav-right li.on{
+	height:36px;
+	background:#fff;
+	border-color:#eee;
+	border-color:red;
+	border-bottom:1px solid #eee;
+	border-bottom-color:red;
+}
+.user-nav-right li.pipe{
+	color:#DEDEE3;
+}
+.user-nav-right span{
+	margin-right:1px;
+	margin-left:6px;
+}
+.user-nav-right a span{
+	margin:0;
+	margin-right:6px;
+}
+.user-nav-submenu{
+	position:absolute;
+	top:36px;
+	left:-1px;
+	background:#fff;
+	border:1px solid #eee;
+	border:1px solid red;
+	border-top:0 none;
+	padding:8px 0;
+	display:none;
+	z-index:3;
+}
+ .on .user-nav-submenu{
+	display:block;
+}
+.user-nav-submenu a{
+	display:block;
+	padding:0 6px;
+	white-space:nowrap;
+}
+.user-nav-submenu a:hover{
+	background:#F5F5F5;
+	color:#6C6C6C;
+}
+.user-nav-submenu.cart{
+	width:307px;
+	height:80px;
+	line-height:80px;
+	text-align:right;
+	white-space:nowrap;
+}
+.user-nav-submenu.cart a{
+	display:inline-block;
+	width:94px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background:#f40;
+	color:#fff;
+	margin-right:5px;
+	border-radius:5px;
+}
+.user-nav-submenu.sitemap{
+	left:auto;
+	right:-1px;
+}
+/*用户导航end*/

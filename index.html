@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖,购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺">
+	<meta name="description" content="淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！">
+	<title>淘宝网-淘！偶喜欢</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<!-- 用户导航start -->
+	<div class="user-nav">
+		<div class="banxin">
+			<ul class="user-nav-left">
+				<li><a href="" class="cheng">亲，请登录</a><a href="">免费注册</a></li>
+				<li><a href="">手机逛淘宝</a></li>
+			</ul>
+			<ul class="user-nav-right">
+				<li><a href="">我的淘宝</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu">
+						<a href="">已买到的宝贝</a><a href="">我的足迹</a>
+					</div>
+				</li>
+				<li><a href=""><span class="icon tbcheng">&#xf0082;</span>购物车</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu cart">
+						您购物车里还没有任何宝贝。<a href="">查看我的购物车</a>
+					</div>
+
+				</li>
+				<li><a href=""><span class="icon hui">&#xe627;</span>收藏夹</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu">
+						<a href="">收藏的宝贝</a><a href="">收藏的店铺</a>	
+					</div>
+				</li>
+				<li><a href="">商品分类</a></li>
+				<li class="pipe">|</li>
+				<li><a href="">卖家中心</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu">
+						<a href="">免费开店</a>
+						<a href="">已卖出的宝贝</a>
+						<a href="">出售中的宝贝</a>
+						<a href="">卖家服务市场</a>
+						<a href="">卖家培训中心</a>
+						<a href="">体检中心</a>
+					</div>
+				</li>
+				<li><a href="">联系客服</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu">
+						<a href="">消费者客服</a><a href="">卖家客服</a>	
+					</div>
+				</li>
+				<li><a href=""><span class="icon tbcheng">&#xe613;</span>网站导航</a><span class="icon">&#xe630;</span>
+					<div class="user-nav-submenu sitemap">
+						<img src="images/test/sitemap.jpg" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 用户导航end -->
+
+	<!-- 顶部通栏广告start -->
+	<div class="top-ad">
+		<img src="images/top_ad.png" alt="">
+	</div>
+	<!-- 顶部通栏广告end -->
+	<!-- 搜索start -->
+	<!-- <div >
+		<div class="banxin">
+			<img src="images/test/search.fw.png" alt="">
+		</div>
+	</div> -->
+	<div class="search">
+		<div>  <!--吸顶框-->
+			<div class="banxin">
+			<div class="search-left">
+				<h1><a href="">淘宝网</a></h1>
+				<h2><a href="">淘宝网</a></h2>
+			</div>
+			<div class="search-center baobei-on">
+				<ul class="search-select">
+					<li id="baobei" class="on" data-placeholder=" &#xe607; 儿童节快乐哦">宝贝</li>
+					<li id="tianmao" data-placeholder=" &#xe607;清新小短裤,秒变大长腿">天猫</li>
+					<li id="dianpu" data-placeholder=" &#xe607;">店铺</li>
+				</ul>
+				<div class="search-box">
+					<input type="text" name="q" id="q" placeholder=" &#xe607; 儿童节快乐哦"><input type="submit" value="搜索" class="search-btn">
+					<em class="icon">&#xe60a;</em>
+					<input type="file" class="file" >
+				</div>
+				<ul class="search-example">
+					<li class="baobei-example"><a href="#" class="tbcheng">机械键盘</a><a href="#">连衣裙</a><a href="#" class="tbcheng">时尚女包</a><a href="#">女士凉鞋</a><a href="#">女T恤</a><a href="#" class="tbcheng">雪纺衫</a><a href="#">双肩包</a><a href="#">女士泳衣</a><a href="#">男包</a><a href="#">妈妈装</a><a href="#">行车记录仪</a><a href="#">沙发</a><a href="#" class="more icon">更多&#xe688;</a></li>
+					<li class="tianmao-example"><a href="#">a字裙</a><a href="#" class="anhong">空调</a><a href="#">短裤男</a><a href="#" class="anhong">凉鞋</a><a href="#">台灯</a><a href="#">伞</a><a href="#" class="anhong">蚊帐</a><a href="#">蓝牙耳机</a><a href="#" class="anhong">运动鞋</a><a href="#">女包</a><a href="#">洗衣液</a><a href="#" class="anhong">夏凉被</a><a href="#">大码女装</a><a href="#">文胸</a><a href="#" class="anhong">t恤男</a></li>
+					<li class="dianpu-example"><a href="#" class="tbcheng">机械键盘</a><a href="#">连衣裙</a><a href="#" class="tbcheng">时尚女包</a><a href="#">女士凉鞋</a><a href="#">女T恤</a><a href="#" class="tbcheng">雪纺衫</a><a href="#">双肩包</a><a href="#">女士泳衣</a><a href="#">男包</a><a href="#">妈妈装</a><a href="#">行车记录仪</a><a href="#">沙发</a><a href="#" class="more icon">更多&#xe688;</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<!-- 二维码start -->
+		<p>
+			<a href="">手机淘宝<img src="images/qr.png" alt=""></a>
+			<span class="icon">&#xe647;</span>
+		</p>
+		<!-- 二维码end -->
+	</div>
+	<!-- 搜索end -->
+	<!-- 主体部分start -->
+	<div class="main banxin">
+		<div class="market-nav fl">
+			<a href="">
+				<h3><span class="icon">&#xe605;</span>主题市场</h3>
+			</a>
+			<ul class="market-list">
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu1.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu2.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu3.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu4.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu5.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu6.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu7.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu8.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu9.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu10.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu11.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu12.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu13.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu14.jpg" alt=""></div>
+				</li>
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">女装</a>/<a href="">男装</a>/<a href="">内衣</a>
+					<div class="market-submenu"><img src="images/test/submenu15.jpg" alt=""></div>
+				</li>
+				
+				<li><span class="icon">&#xe688;</span><em class="icon">&#xe600;</em><a href="">学习</a>/<a href="">卡券</a>/<a href="">本地服务</a>
+					<div class="market-submenu"><img src="images/test/submenu16.jpg" alt=""></div>
+				</li>
+			</ul>
+			<img src="images/aside-menu-ad.jpg" alt="" class="market-ad">
+		</div>
+		<div class="main-section fr">
+			<ul class="main-header">
+				<li><a href="" class="tbcheng">天猫</a></li>
+				<li><a href="" class="tbcheng">聚划算</a></li>
+				<li><a href="" class="tbcheng">天猫超市</a></li>
+				<li>|</li>
+				<li><a href="">淘抢购</a></li>
+				<li><a href="">电器城</a></li>
+				<li><a href="">司法拍卖</a></li>
+				<li><a href="">中国质造</a></li>
+				<li><a href="">特色中国</a></li>
+				<li>|</li>
+				<li><a href="">飞猪旅行</a></li>
+				<li><a href="">智能生活</a></li>
+				<li><a href="">苏宁易购</a></li>
+			</ul>
+			<div class="main-center fl">
+				<!-- 焦点图1start -->
+				<div id="banner1" class="fl">
+					<ul>
+						<li><a href=""><img src="images/focus1/1.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/focus1/2.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/focus1/3.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/focus1/4.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/focus1/5.jpg" alt=""></a></li>
+						<li><a href=""><img src="images/focus1/1.jpg" alt=""></a></li>
+					</ul>
+					<ol>
+						<li class="cur"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<span>&lt;</span><span class="right-btn">&gt;</span>
+				</div>
+				<!-- 焦点图1end -->
+				
+				<div class="banner1-right fl"><img src="images/focus1-right.jpg" alt=""></div>
+
+
+				<!-- 焦点图2start -->
+				<div id="banner2-wrapper" class="fl">
+					<div id="banner2-header">
+						<em>天猫必逛 </em>
+						 热门品牌,天天上天猫!
+						 <strong class="fr"><span>1</span>/6</strong>
+					</div>
+					<div id="banner2">
+						<ul>
+							<li><a href=""><img src="images/focus2/1.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/2.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/3.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/4.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/5.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/6.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/focus2/1.jpg" alt=""></a></li>
+						</ul>
+						<ol>
+							<li class="cur"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+						<span>&lt;</span><span class="right-btn">&gt;</span>
+					</div>
+				</div>
+
+				<!-- 焦点图2end -->
+
+				<div class="banner2-right fl">今日热卖<br><img src="images/slider2-right.jpg" alt=""></div>
+
+
+				<!-- 焦点图3start -->
+				<ul class="banner3">
+					<li><a href=""><img src="images/slider3/1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/slider3/2.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/slider3/3.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/slider3/4.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/slider3/5.jpg" alt=""></a></li>
+				</ul>
+				<!-- 焦点图3end -->
+			</div>
+			<div class="main-right fr">
+				<img src="images/test/bulb.jpg">
+				<img src="images/test/notice.jpg">
+
+				<!-- 主要服务start -->
+				<ul class="main-services">
+					<li><a href=""><span></span>充话费</a>
+						<div class="services-submenu">
+							<img src="images/right-tab/1-1.jpg" alt="">
+							<em class="icon">&#xe647;</em>
+						</div>
+					</li>
+					<li><a href=""><span></span>游戏</a>
+						<div class="services-submenu">
+							<img src="images/right-tab/2-1.jpg" alt="">
+							<em class="icon">&#xe647;</em>
+						</div>
+					</li>
+					<li><a href=""><span></span>旅游</a>
+						<div class="services-submenu">
+							<img src="images/right-tab/3-1.jpg" alt="">
+							<em class="icon">&#xe647;</em>
+						</div>
+					</li>
+					<li><a href=""><span></span>车险</a>
+						<div class="services-submenu">
+							<img src="images/right-tab/4-1.jpg" alt="">
+							<em class="icon">&#xe647;</em>
+						</div>
+					</li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					<li><a href=""><span></span>车险</a></li>
+					
+				</ul>
+				<!-- 主要服务end -->
+
+				<img src="images/test/app.jpg" alt="" style="margin-top:1px">
+			</div>
+		</div>
+	</div>
+	<!-- 主体部分end -->
+
+	<div class="seat clearfix">
+		<div class="seat-left">
+			<!-- 我常逛的 start -->
+			<div class="haunt-wrapper clearfix section">
+				<h2>
+					<em>我常逛的</em>
+					<a href="#">更多<span class="iconfont">&#xe61a;</span></a>
+				</h2>
+				<div class="haunt1"><img src="images/wochangguangde/1.jpg" width="440" height="362"></div>
+				<div class="haunt2"><img src="images/wochangguangde/2.jpg" width="440" height="362"></div>
+				<div class="haunt3"><img src="images/wochangguangde/3.jpg" width="440" height="362"></div>
+				<div class="haunt4"><img src="images/wochangguangde/4.jpg" width="440" height="362"></div>
+			</div>
+			<!-- 我常逛的 end -->
+			<div class="haunt-ad">
+				<img src="images/haunt-ad.png" width="880" height="70">
+			</div>
+
+			<!-- 时尚爆料王 start -->
+			<div class="fashion-wrapper section">
+				<h2>
+					<em>时尚爆料王</em>
+					<a href="#">更多<span class="iconfont">&#xe61a;</span></a>
+				</h2>
+				<div class="goods-list clearfix">
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+				</div>
+			</div>
+			<!-- 时尚爆料王 end -->
+
+			<!-- 品质生活家start -->
+			<div class="life-wrapper section">
+				<h2>
+					<em>品质生活家</em>
+					<a href="#">更多<span class="iconfont">&#xe61a;</span></a>
+				</h2>
+				<div class="goods-list clearfix">
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+				</div>
+			</div>
+			<!-- 品质生活家start -->
+
+			<!-- 特色玩味控start -->
+			<div class="play-wrapper section">
+				<h2>
+					<em>特色玩味控</em>
+					<a href="#">更多<span class="iconfont">&#xe61a;</span></a>
+				</h2>
+				<div class="goods-list clearfix">
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+				</div>
+			</div>
+			<!-- 特色玩味控end -->
+
+			<!-- 实惠专业户start -->
+			<div class="economical-wrapper section">
+				<h2>
+					<em>实惠专业户</em>
+					<a href="#">更多<span class="iconfont">&#xe61a;</span></a>
+				</h2>
+				<div class="goods-list clearfix">
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+					<div class="goods-item no-margin"><img src="images/pinzhishenghuojia/1.png" width="221" height="258"></div>
+				</div>
+			</div>
+			<!-- 实惠专业户end -->
+		</div>
+		<div class="seat-right">
+			<div class="youhuohao">
+				<img src="images/test/youhaohuo.jpg">
+			</div>
+			<div class="jinrihaodian">
+				<img src="images/test/jinrihaodian.jpg" alt="">
+			</div>
+			<div class="jinriremai">
+				<img src="images/test/jinriremai2.jpg" alt="">
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- 热卖单品 start -->
+	<div class="hot">
+		<h3><ins></ins>热卖单品</h3>
+		<div class="hot-recommend">
+			<a href="#">键盘</a>
+			<a href="#">沙发</a>
+			<a href="#">男包</a>
+			<a href="#">女包</a>
+			<a href="#">拉杆箱</a>
+			<a href="#">连衣裙</a>
+			<a href="#">妈妈装</a>
+			<a href="#">电脑椅</a>
+			<a href="#">床垫</a>
+			<a href="#">窗帘</a>
+			<a href="#">电脑桌</a>
+			<a href="#">雪纺衫</a>
+			<a href="#">行车仪</a>
+			<a href="#">鞋柜</a>
+			<a href="#">沙发垫</a>
+			<a href="#">T恤女</a>
+			<a href="#">面膜</a>
+			<a href="#">客厅灯</a>
+			<a href="#">衣柜</a>
+			<a href="#">凉鞋</a>
+			<a href="#">双肩包</a>
+			<a href="#">泳衣</a>
+			<a href="#">男鞋</a>
+			<a href="#">凉鞋女</a>
+			<a href="#">短裤女</a>
+			<a href="#">椅子</a>
+		</div>
+		<ul id="hot-goods" class="clearfix">
+			<li class="big">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/1.jpg" width="214" height="214"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+						<div class="hot-line3"><a href="#">买了许多东西，都非常满意，我会常来的~~</a></div>
+						<div class="hot-line4"><a href="#">评价 46</a> <a href="#">收藏 510</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+			<li class="small">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg" width="139" height="139"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+			<li class="big">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/1.jpg" width="214" height="214"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+						<div class="hot-line3"><a href="#">买了许多东西，都非常满意，我会常来的~~</a></div>
+						<div class="hot-line4"><a href="#">评价 46</a> <a href="#">收藏 510</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+			<li class="small">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg" width="139" height="139"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg" width="139" height="139"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+			<li class="big">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/1.jpg" width="214" height="214"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+						<div class="hot-line3"><a href="#">买了许多东西，都非常满意，我会常来的~~</a></div>
+						<div class="hot-line4"><a href="#">评价 46</a> <a href="#">收藏 510</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+			<li class="small">
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg" width="139" height="139"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+				<div class="hot-item">
+					<div class="hot-inner">
+						<a href="#"><img src="images/hot/2.jpg" width="139" height="139"></a>
+						<div class="hot-line1"><a href="#">¥749.00</a></div>
+						<div class="hot-line2"><a href="#">月销33笔</a></div>
+					</div>
+					<a href="#" class="hot-shelter-link">
+						<div class="hot-shelter">
+							
+						</div>
+						<div class="hot-shelter-title">促销特惠！紫砂茶具</div>
+						<div class="hot-shelter-go">去看看</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 热卖单品 end -->
+
+
+	<!-- 猜你喜欢start -->
+	<div class="guesse section">
+		猜你喜欢
+	</div>
+	<!-- 猜你喜欢end -->
+
+
+
+
+	<!-- 侧边栏start -->
+	<ul id="aside-nav">
+		<li class="favorite"><strong>我常<br>逛的</strong></li>
+		<li class="fashion"><strong>时尚</strong></li>
+		<li class="life"><strong>品质</strong></li>
+		<li class="special"><strong>特色</strong></li>
+		<li class="economical"><strong>实惠</strong></li>
+		<li class="guess"><strong>猜你<br>喜欢</strong></li>
+		<li class="toTop"><strong class="icon">&#xe678;<br>顶部</strong></li>
+		<li class="feedback"><a href=""><strong>反馈</strong></a></li>
+		<li class="report"><a href=""><strong>暴恐<br>举报</strong></a></li>
+	</ul>
+	<!-- 侧边栏end -->
+</body>
+</html>

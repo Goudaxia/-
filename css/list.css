@@ -1,0 +1,273 @@
+/*列表页list.html私有的CSS*/
+
+@charset "utf-8";
+/* 头部end */
+.header{
+	height:61px;
+	width:100%;
+	padding-top:20px;
+}
+.header h1{
+	margin-right:8px;
+}
+.select{
+	width:78px;
+	height:18px;
+	border:1px solid #E2E2E2;
+	line-height:18px;
+	position:relative;
+	margin-top:11px;
+}
+.select:after{
+	content:'\e630';
+	font-family:'iconfont';
+	position:absolute;
+	top:1px;
+	right:4px;
+	z-index:3;
+}
+.select.on:after{
+	transform:rotate(180deg);
+}
+.select span{
+	width:78px;
+	height:18px;
+	display:block;
+	text-indent:10px;
+	background:#fff;
+	position:relative;
+	z-index:2;
+	cursor:pointer;
+}
+.select-submenu{
+	position:absolute;
+	top:17px;
+	left:-1px;
+	border:1px solid #E2E2E2;
+	z-index:1;
+	box-shadow:2px 2px 2px rgba(0, 0, 0, .5);
+	display:none;
+}
+.select.on .select-submenu{
+	display:block;
+}
+.search-box{
+	width:602px;
+	height:35px;
+}
+.search-box div{
+	width:437px;
+	height:31px;
+	border:2px solid #F82800;
+	border-right:0 none;
+	position:relative;
+}
+.search-box div ul{
+	width:69px;
+	height:31px;
+	position:absolute;
+	top:0;
+	left:-2px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.search-box div ul.on{
+	overflow:visible;
+}
+.search-box div ul:after{
+	content:'\e630';
+	font-family:'iconfont';
+	position:absolute;
+	top:6px;
+	right:9px;
+}
+.search-box div ul.on:after{
+	transform:rotate(180deg);
+}
+.search-box div ul li{
+	width:65px;
+	height:31px;
+	border-left:2px solid #D53838;
+	border-right:2px solid #D53838;
+	text-indent:15px;
+	line-height:31px;
+}
+.search-box div ul li:first-child{
+	color:#666666;
+	background:#FAFAFA;
+	border-left:2px solid #F82800;
+	border-right:0 none;
+}
+.search-box div ul li:last-child{
+	background:#fff;
+	border-bottom:2px solid #D53838;
+	color:#FF5500;
+	font-weight:bold;
+}
+.search-box div .sou{
+	width:370px;
+	height:31px;
+	margin-left:67px;
+	border:0 none;
+	outline:0 none;
+	text-indent:5px;
+}
+.nvzhuang{
+	width:80px;
+	height:35px;
+	background:#F82800;
+	line-height:35px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+}
+.all{
+	width:78px;
+	height:33px;
+	border:1px solid #FFB08B;
+	background:#FFF0E7;
+	color:#F82800;
+	line-height:33px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.nvzhuang:hover{
+	background:#D53838;
+	color:#fff;
+}
+.all:hover{
+	background:#FFEADE;
+	color:#FF4400;
+}
+/* 头部start */
+/* 导航start */
+.nav{
+	height:35px;
+	width:100%;
+	border-bottom:2px solid #F56293;
+	line-height:35px;
+	font-size:14px;
+	font-weight:bold;
+	position:relative;
+}
+.nav ul{
+	height:35px;
+}
+.nav ul li{
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.nav ul li a{
+	height:35px;
+	padding:0 16px;
+	display:block;
+	position:relative;
+	z-index:3;
+}
+.nav ul li:first-child a:after{
+	content:'\e605';
+	font-family:'iconfont';
+	display:inline-block;
+	margin-left:4px;
+	font-size:12px;
+}
+.nav ul li:last-child{
+	float:right;
+	margin-right:28px;
+}
+.nav ul li:hover a{
+	color:#fff;
+}
+.nav ul li span{
+	width:100%;
+	height:35px;
+	background:#F56293;
+	position:absolute;
+	top:35px;
+	left:0px;
+	z-index:1;
+}
+.nav ul li.home{
+	position:static;
+}
+.nav-submenu{
+	width:100%;
+	position:absolute;
+	top:35px;
+	left:0;
+	text-align: center;
+	background:#F56293;
+	display:none;
+}
+.nav ul li.home.on{
+	background:#F56293;
+}
+.nav ul li.home.on .nav-submenu{
+	display:block;
+}
+/* 导航end */
+/* 焦点图start */
+.banner{
+	width:380px;
+	height:400px;
+	
+	position:relative;
+}
+.banner ul{
+	width:380px;
+	height:400px;
+	position:relative;
+}
+.banner ul li{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.banner ul li:first-child{
+	z-index:1;
+}
+.banner ol{
+	width:45px;
+	height:13px;
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-23px;
+	background:rgba(255,255,255,0.3);
+	z-index:2;
+	border-radius:7px;
+}
+.banner ol li{
+	width:9px;
+	height:9px;
+	background:#B7B7B7;
+	border-radius:50%;
+	float:left;
+	margin:2px 3px;
+}
+.banner ol li.cur{
+	background:#F56293;
+}
+.banner span{
+	width:30px;
+	height:77px;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	left:10px;
+	top:50%;
+	margin-top:-37px;
+	z-index:2;
+	color:#fff;
+	line-height:77px;
+	text-align:center;
+	font-weight:bold;
+	display:none;
+}
+.banner span.right{
+	right:10px;
+	left:auto;
+}
+/* 焦点图end */
